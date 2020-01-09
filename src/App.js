@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router } from 'react-router-dom'
+import { Route } from 'react-router'
+import history from './history'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Router history={history}>
+      <Route exact path = '/'/>
+    </Router>
   );
 }
 
